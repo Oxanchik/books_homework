@@ -62,7 +62,12 @@ copy .env.example .env      # Windows
 
 Откройте файл .env в любом текстовом редакторе и замените your_password_here на ваш пароль:
 ```bash
-POSTGRES='your_password_here'
+PASS='your_password_here'
+```
+Также можно заменить логин и название базы данных:
+```bash
+LOGIN='postgres'
+DBNAME='books_db'
 ```
 
 **6. Запустите программу:**
@@ -73,7 +78,7 @@ python main.py
 ## Пример работы
 ```text
 Инициализация БД...
-✅ База данных 'clients_db' создана
+✅ База данных 'books_db' создана
 Введите имя издателя: O’Reilly
 
 название книги                                               | название магазина              | стоимость покупки  | дата покупки
